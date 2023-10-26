@@ -1,9 +1,15 @@
+// @import "base/";
 @import "base/reset";
+@import "base/typography";
 
-// @import "/scss/components/";
+// @import "utils/";
+@import "utils/variables";
 
-// @import "/scss/layouts/";
+// @import "components/";
 
-// @import "/scss/pages/";
+// @import "layouts/";
+@import "layouts/header";
+@import "layouts/footer";
 
-// @import "/scss/utils/"
+// @import "pages/";
+@import "pages/homepage";
