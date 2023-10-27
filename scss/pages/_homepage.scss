@@ -1,8 +1,3 @@
-.header {
-  &_goback--none {
-    display: none;
-  }
-}
 .header--shadow {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -21,5 +16,144 @@
   }
   &__p {
     font-size: 16px;
+  }
+}
+.explorer {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey_background;
+  justify-content: center;
+  align-items: center;
+  height: 275px;
+  &__h2 {
+    width: 275px;
+    height: 68px;
+    text-align: center;
+    font-size: 24px;
+  }
+  &__p {
+    margin-bottom: 27px;
+    width: 315px;
+    height: 46px;
+    text-align: center;
+  }
+}
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  gap: 24.94px;
+  margin-left: 12.51px;
+  &__h2 {
+    margin: 48px 80px 27.06px 20px;
+    width: 275px;
+    height: 31px;
+  }
+  &__btn {
+    @include shadow;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px 0 20px;
+    background-color: $grey_background;
+    height: 72.379px;
+    border-radius: 20px;
+  }
+  &__txt-i {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 280px;
+    width: 80%;
+  }
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    left: 21px;
+    height: 24px;
+    width: 24px;
+    border-radius: 90px;
+    background-color: $purple;
+  }
+  &__i {
+    display: flex;
+    align-items: center;
+    &--purple {
+      color: $purple;
+    }
+  }
+  &__p {
+  }
+}
+
+// restaurants
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey_background;
+  gap: 20px;
+  &__choix {
+    display: flex;
+    flex-direction: column;
+    margin: 0 17px 0 17px;
+    gap: 20px;
+  }
+}
+.link {
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__img {
+    width: 100%;
+    height: 231px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  &__new {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 29px;
+    font-size: 14px;
+    margin: 30px 20px 0 0;
+    background-color: $vert;
+    height: 20px;
+    right: 20px;
+    color: $vert--text;
+  }
+}
+.card-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 16px 25px 12px 13px;
+  // background-color: $purple;
+  border-radius: 0 0 15px 15px;
+  &__heart {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__h3 {
+    font-size: 18px;
+  }
+  &__p {
+    font-size: 17px;
   }
 }

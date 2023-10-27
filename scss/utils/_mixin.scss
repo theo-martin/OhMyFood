@@ -1,0 +1,6 @@
+@mixin gradient-purple($purple--gradient, $pink--gradient) {
+  background: linear-gradient(0deg, $purple--gradient, $pink--gradient);
+}
+@mixin shadow {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}

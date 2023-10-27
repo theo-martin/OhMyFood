@@ -1,0 +1,14 @@
+.btn-purple {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  @include gradient-purple($purple--gradient, $pink--gradient);
+  /* Shadow/Button */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  &--explorer {
+    width: 218px;
+    height: 50px;
+  }
+}

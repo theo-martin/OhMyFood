@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="png" href="images/logo/cooking.256x256.png" />
     <script
       src="https://kit.fontawesome.com/1c9456a698.js"
       crossorigin="anonymous"
@@ -11,8 +12,7 @@
     <title>hoMyFood</title>
   </head>
   <header class="header header--shadow">
-    <i class="fa-solid fa-arrow-left header_goback header_goback--none"></i>
-    <img class="header__logo" src="images/logo/ohmyfood.png" alt="" />
+    <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo" />
   </header>
   <body>
     <section class="location">
@@ -24,94 +24,103 @@
       <p class="explorer__p">
         Découvrez des restaurants d’exception, sélectionnés par nos soins.
       </p>
-      <a href="#restaurants" class="explorer__link">Explorer nos restaurants</a>
+      <a href="#restaurants" class="btn-purple btn-purple--explorer"
+        >Explorer nos restaurants</a
+      >
     </section>
     <section class="fonctionnement">
       <h2 class="fonctionnement__h2">Fonctionnement</h2>
       <div class="fonctionnement__btn btn--rnd">
         <p class="fonctionnement__num">1</p>
-        <i class="fa-solid fa-mobile-screen-button fonctionnement__i"></i>
-        <p class="fonctionnement__text">Choisissez un restaurant</p>
+        <div class="fonctionnement__txt-i">
+          <i class="fa-solid fa-mobile-screen-button fonctionnement__i"></i>
+          <p class="fonctionnement__p">Choisissez un restaurant</p>
+        </div>
       </div>
       <div class="fonctionnement__btn btn--rnd">
         <p class="fonctionnement__num">2</p>
-        <i class="fa-solid fa-list-ul fonctionnement__i"></i>
-        <p class="fonctionnement__text">Composez votre menu</p>
+        <div class="fonctionnement__txt-i">
+          <i class="fa-solid fa-list-ul fonctionnement__i"></i>
+          <p class="fonctionnement__p">Composez votre menu</p>
+        </div>
       </div>
       <div class="fonctionnement__btn btn--rnd">
         <p class="fonctionnement__num">3</p>
-        <i class="fa-solid fa-store fonctionnement__i"></i>
-        <p class="fonctionnement__text">Dégustez au restaurant</p>
+        <div class="fonctionnement__txt-i">
+          <i
+            class="fa-solid fa-store fonctionnement__i fonctionnement__i--purple"
+          ></i>
+          <p class="fonctionnement__p">Dégustez au restaurant</p>
+        </div>
       </div>
     </section>
     <section id="restaurants" class="restaurants">
       <h1>Restaurants</h1>
       <div class="restaurants__choix">
-        <a class="link" href="">
-          <article class="link__article">
+        <a class="link-card" href="">
+          <article class="card">
             <img
-              class="link__img"
+              class="card__img"
               src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
               alt="image restaurant"
             />
-            <p>Nouveau</p>
-            <div class="article-component">
-              <div class="article-component__text">
-                <h3 class="article-component__h3">La palette du goût</h3>
-                <p class="article-component__p">Ménilmontant</p>
+            <p class="card__new">Nouveau</p>
+            <div class="card-component">
+              <div class="card-component__text">
+                <h3 class="card-component__h3">La palette du goût</h3>
+                <p class="card-component__p">Ménilmontant</p>
               </div>
 
-              <i class="fa-regular fa-heart article-component__heart"> </i>
+              <i class="fa-regular fa-heart card-component__heart"> </i>
             </div>
           </article>
         </a>
-        <a class="link" href="">
-          <article class="link__article">
+        <a class="link-card" href="">
+          <article class="card">
             <img
-              class="link__img"
+              class="card__img"
               src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
               alt="image restaurant"
             />
-            <p>Nouveau</p>
-            <div class="article-component">
-              <div class="article-component__text">
-                <h3 class="article-component__h3">La note enchantée</h3>
-                <p class="article-component__p">Charonne</p>
+            <p class="card__new">Nouveau</p>
+            <div class="card-component">
+              <div class="card-component__text">
+                <h3 class="card-component__h3">La note enchantée</h3>
+                <p class="card-component__p">Charonne</p>
               </div>
-              <i class="fa-regular fa-heart article-component__heart"> </i>
+              <i class="fa-regular fa-heart card-component__heart"> </i>
             </div>
           </article>
         </a>
-        <a class="link" href="">
-          <article class="link__article">
+        <a class="link-card" href="">
+          <article class="card">
             <img
-              class="link__img"
+              class="card__img"
               src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
               alt="image restaurant"
             />
-            <div class="article-component">
-              <div class="article-component__text">
-                <h3 class="article-component__h3">À la française</h3>
-                <p class="article-component__p">Cité Rouge</p>
+            <div class="card-component">
+              <div class="card-component__text">
+                <h3 class="card-component__h3">À la française</h3>
+                <p class="card-component__p">Cité Rouge</p>
               </div>
-
-              <i class="fa-regular fa-heart article-component__heart"> </i>
+              <i class="fa-regular fa-heart card-component__heart"> </i>
             </div>
           </article>
         </a>
-        <a class="link" href="">
-          <article class="link__article">
+        <a class="link-card" href="">
+          <article class="card">
             <img
-              class="link__img"
+              class="card__img"
               src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="image restaurant"
             />
-            <div class="article-component">
-              <div class="article-component__text">
-                <h3 class="article-component__h3">Le délice des sens</h3>
-                <p class="article-component__p">Folie-Méricourt</p>
+            <div class="card-component">
+              <div class="card-component__text">
+                <h3 class="card-component__h3">Le délice des sens</h3>
+                <p class="card-component__p">Folie-Méricourt</p>
               </div>
-              <i class="fa-regular fa-heart article-component__heart"> </i>
+              <i class="fa-regular fa-heart card-component__heart"> </i>
             </div>
           </article>
         </a>
