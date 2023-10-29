@@ -141,11 +141,16 @@
   }
   @media (min-width: 1024px) {
     margin: 50px 180px;
+    &__p {
+      white-space: nowrap;
+    }
     &__block-btn {
       gap: 35px;
     }
     &__txt-i {
-      max-width: 225px;
+      display: flex;
+      max-width: 275px;
+      justify-content: space-evenly;
     }
     &__btn {
       justify-content: unset;

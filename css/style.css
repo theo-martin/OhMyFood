@@ -292,11 +292,16 @@ a {
   .fonctionnement {
     margin: 50px 180px;
   }
+  .fonctionnement__p {
+    white-space: nowrap;
+  }
   .fonctionnement__block-btn {
     gap: 35px;
   }
   .fonctionnement__txt-i {
-    max-width: 225px;
+    display: flex;
+    max-width: 275px;
+    justify-content: space-evenly;
   }
   .fonctionnement__btn {
     justify-content: unset;
