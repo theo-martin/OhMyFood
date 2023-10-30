@@ -1,0 +1,41 @@
+.abimation__btn-purple {
+  transition: all 500ms ease-in-out;
+  &:hover {
+    opacity: 85%;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+.heart {
+  &__empty {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    :active {
+      opacity: 0;
+    }
+  }
+  &__full {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    &:active {
+      animation: full-heart 550ms forwards;
+      // opacity: 1;
+    }
+  }
+}
+@keyframes full-heart {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.25;
+    animation-timing-function: cubic-bezier(0.63, 0.38, 0.28, 0.92);
+  }
+  100% {
+    opacity: 1;
+  }
+}

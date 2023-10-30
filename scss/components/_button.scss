@@ -12,3 +12,36 @@
     height: 50px;
   }
 }
+
+.heart {
+  display: flex;
+  z-index: 2;
+  margin-top: 25px;
+  border: unset;
+  position: absolute;
+  font-size: 24px;
+  align-items: flex-start;
+  right: 70px;
+  &__full {
+    &::before {
+      @include gradient-purple($purple--gradient, $pink--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  @media (min-width: 768px) {
+    top: 20px;
+    width: unset;
+    height: 0;
+    position: relative;
+    padding-left: 42vw;
+    right: 120px;
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: unset;
+  }
+  @media (min-width: 1024px) {
+    height: 0;
+    right: 180px;
+  }
+}
