@@ -44,11 +44,12 @@
 // animation loader
 .loader {
   &__letter {
-    width: 1%;
-    animation: loader 1000ms ease forwards;
+    animation: loader-mobile 1000ms ease forwards;
   }
   @media (min-width: 768px) {
-    font-size: 100px;
+    &__letter {
+      animation: loader 1000ms ease forwards;
+    }
   }
 }
 @keyframes backgroundloader {
@@ -71,7 +72,14 @@
     transform: rotate(0deg);
   }
   100% {
-    width: 10%;
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(4);
+  }
+}
+@keyframes loader-mobile {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) scale(2);
   }
 }
