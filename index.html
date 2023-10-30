@@ -24,7 +24,9 @@
       <p class="explorer__p">
         Découvrez des restaurants d’exception, sélectionnés par nos soins.
       </p>
-      <a href="#restaurants" class="btn-purple btn-purple--explorer"
+      <a
+        href="#restaurants"
+        class="btn-purple btn-purple--explorer animation__btn-purple"
         >Explorer nos restaurants</a
       >
     </section>
@@ -59,58 +61,107 @@
     <section id="restaurants" class="restaurants">
       <h1 class="restaurants__h1">Restaurants</h1>
       <div class="restaurants__choix">
-        <a class="link-card" href="">
-          <article class="card">
+        <!-- carte 1  -->
+        <article class="card">
+          <a class="card__link1" href="">
             <img
               class="card__img"
               src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
               alt="image restaurant"
             />
-            <p class="card__new card__new--1">Nouveau</p>
-            <div class="card-component">
-              <div class="card-component__text">
-                <h3 class="card-component__h3">La palette du goût</h3>
-                <p class="card-component__p">Ménilmontant</p>
+          </a>
+          <p class="card__new card__new--1">Nouveau</p>
+          <div class="card__component">
+            <button class="heart">
+              <i class="fa-regular fa-heart heart__empty"> </i>
+              <i class="fa-solid fa-heart heart__full"></i>
+            </button>
+            <a class="card__link2" href="">
+              <div class="card-content">
+                <div class="card-content__text">
+                  <h3 class="card-content__h3">La palette du goût</h3>
+                  <p class="card-content__p">Ménilmontant</p>
+                </div>
               </div>
-
-              <i class="fa-regular fa-heart card-component__heart"> </i>
-            </div>
-          </article>
-        </a>
-        <a class="link-card" href="">
-          <article class="card">
+            </a>
+          </div>
+        </article>
+        <!-- carte 2 -->
+        <article class="card">
+          <a class="card__link1" href="">
             <img
               class="card__img"
               src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
               alt="image restaurant"
             />
-            <p class="card__new card__new--2">Nouveau</p>
-            <div class="card-component">
-              <div class="card-component__text">
-                <h3 class="card-component__h3">La note enchantée</h3>
-                <p class="card-component__p">Charonne</p>
+          </a>
+          <p class="card__new card__new--2">Nouveau</p>
+          <div class="card__component">
+            <button class="heart">
+              <i class="fa-regular fa-heart heart__empty"> </i>
+              <i class="fa-solid fa-heart heart__full"></i>
+            </button>
+            <a class="card__link2" href="">
+              <div class="card-content">
+                <div class="card-content__text">
+                  <h3 class="card-content__h3">La note enchantée</h3>
+                  <p class="card-content__p">Charonne</p>
+                </div>
               </div>
-              <i class="fa-regular fa-heart card-component__heart"> </i>
-            </div>
-          </article>
-        </a>
-        <a class="link-card" href="">
-          <article class="card">
+            </a>
+          </div>
+        </article>
+        <!-- carte 3 -->
+        <article class="card">
+          <a class="card__link1" href="">
             <img
               class="card__img"
               src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
               alt="image restaurant"
             />
-            <div class="card-component">
-              <div class="card-component__text">
-                <h3 class="card-component__h3">À la française</h3>
-                <p class="card-component__p">Cité Rouge</p>
+          </a>
+          <div class="card__component">
+            <button class="heart">
+              <i class="fa-regular fa-heart heart__empty"> </i>
+              <i class="fa-solid fa-heart heart__full"></i>
+            </button>
+            <a class="card__link2" href="">
+              <div class="card-content">
+                <div class="card-content__text">
+                  <h3 class="card-content__h3">À la française</h3>
+                  <p class="card-content__p">Cité Rouge</p>
+                </div>
               </div>
-              <i class="fa-regular fa-heart card-component__heart"> </i>
-            </div>
-          </article>
-        </a>
-        <a class="link-card" href="">
+            </a>
+          </div>
+        </article>
+        <!-- carte 4 -->
+
+        <article class="card">
+          <a class="card__link1" href="">
+            <img
+              class="card__img"
+              src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="image restaurant"
+            />
+          </a>
+          <div class="card__component">
+            <button class="heart">
+              <i class="fa-regular fa-heart heart__empty"> </i>
+              <i class="fa-solid fa-heart heart__full"></i>
+            </button>
+            <a class="card__link2" href="">
+              <div class="card-content">
+                <div class="card-content__text">
+                  <h3 class="card-content__h3">Le délice des sens</h3>
+                  <p class="card-content__p">Folie-Méricourt</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- carte avant modification ci dessous (ne prend pas en charge le clique du coeur sans que ca actualise la page: article entier dans le a), changement classe et ajout icone coeur depuis -->
+        <!-- <a class="link-card" href="">
           <article class="card">
             <img
               class="card__img"
@@ -122,10 +173,13 @@
                 <h3 class="card-component__h3">Le délice des sens</h3>
                 <p class="card-component__p">Folie-Méricourt</p>
               </div>
-              <i class="fa-regular fa-heart card-component__heart"> </i>
+              <i
+                class="fa-regular fa-heart card-component__heart animation__heart"
+              >
+              </i>
             </div>
           </article>
-        </a>
+        </a> -->
       </div>
     </section>
   </body>
