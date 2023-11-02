@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohMyFood</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="png" href="/images/logo/cooking.256x256.png" />
+    <script
+      src="https://kit.fontawesome.com/1c9456a698.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <span class="loader__letter">o</span>
+      <span class="loader__letter">h</span>
+      <span class="loader__letter loader__letter--m">m</span>
+      <span class="loader__letter">y</span>
+      <span class="loader__letter loader__letter--f">f</span>
+      <span class="loader__letter">o</span>
+      <span class="loader__letter loader__letter--o">o</span>
+      <span class="loader__letter">d</span>
+    </div>
+    <header class="header header--shadow">
+      <a href="/index.html" class="header__link-goback">
+        <i class="fa-solid fa-arrow-left header__goback"></i>
+      </a>
+      <img class="header__logo" src="/images/logo/ohmyfood.png" alt="logo" />
+    </header>
+    <main>
+      <section class="banner">
+        <img
+          class="banner__img"
+          src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="image-banniere"
+        />
+      </section>
+      <section class="la-palette-du-gout">
+        <section class="title">
+          <h1 class="title__h1">La palette du goût</h1>
+          <button class="heart title__heart">
+            <i class="fa-regular fa-heart heart__empty"> </i>
+            <i class="fa-solid fa-heart heart__full"></i>
+          </button>
+        </section>
+        <!-- partie entrées -->
+        <section id="entrees" class="entrees">
+          <h2 class="entrees__h2">
+            <span class="entrees__h2--green">ENTRÉ</span>ES
+          </h2>
+          <div class="entrees__block-btn">
+            <!-- entrée 1 -->
+            <a href="#entrees" class="entrees__btn btn--rnd">
+              <!-- ajouter div ici pour regroupé name-eat et ingredient -->
+              <h3 class="entrees__h3 name-eat">Fricassée d'escargots</h3>
+              <p class="entrees__p ingredient">Au piment d'Espelette</p>
+              <p class="entrees__p price">25€</p>
+            </a>
+            <!--entrée 2  -->
+            <a href="#entrees" class="entrees__btn btn--rnd">
+              <h3 class="entrees__h3 name-eat">Foie gras de canard mi-cuit</h3>
+              <p class="entrees__p ingredient">
+                Et ses copeaux de truffe sur lit de caviar
+              </p>
+              <p class="entrees__p price">35€</p>
+            </a>
+            <!-- entrée 3 -->
+            <a href="#entrees" class="entrees__btn btn--rnd">
+              <h3 class="entrees__h3 name-eat">Œuf au plat</h3>
+              <p class="entrees__p ingredient">
+                Assaisonné à la truffe sur lit de caviar
+              </p>
+              <p class="entrees__p price">20€</p>
+            </a>
+          </div>
+        </section>
+        <!-- partie plats -->
+        <section id="plats" class="plats">
+          <h2 class="plats__h2"><span class="plats__h2--green">PLAT</span>S</h2>
+          <div class="plats__block-btn">
+            <!-- plat 1 -->
+            <a href="#plats" class="plats__btn btn--rnd">
+              <h3 class="plats__h3 name-eat">Filet de bœuf aux herbes</h3>
+              <p class="plats__p ingredient">
+                Accompagné de sa ribambelle de légumes
+              </p>
+              <p class="plats__p price">40€</p>
+            </a>
+            <!-- plat 2 -->
+            <a href="#plats" class="plats__btn btn--rnd">
+              <h3 class="plats__h3 name-eat">Parmentier de queue de bœuf</h3>
+              <p class="plats__p ingredient">
+                À la truffe noire sur sa purée de panais
+              </p>
+              <p class="plats__p price">35€</p>
+            </a>
+            <!-- plat 3 -->
+            <a href="#plats" class="plats__btn btn--rnd">
+              <h3 class="plats__h3 name-eat">Filet de turbot</h3>
+              <p class="plats__p ingredient">Aux agrumes</p>
+              <p class="plats__p price">44€</p>
+            </a>
+          </div>
+        </section>
+        <!-- partie desserts -->
+        <section id="desserts" class="desserts">
+          <h2 class="desserts__h2">
+            <span class="desserts__h2--green">DESS</span>ERTS
+          </h2>
+          <div class="desserts__block-btn">
+            <!-- dessert 1 -->
+            <a href="#desserts" class="dessert__btn btn--rnd">
+              <h3 class="desserts__h3 name-eat">Paris-Brest</h3>
+              <p class="desserts__p ingredient">Revisité</p>
+              <p class="desserts__p price">18€</p>
+            </a>
+            <!-- dessert 2 -->
+            <a href="#desserts" class="dessert__btn btn--rnd">
+              <h3 class="desserts__h3 name-eat">
+                Macaron au chocolat d'exception
+              </h3>
+              <p class="desserts__p ingredient">
+                Et glace à la vanille de Madagascar
+              </p>
+              <p class="desserts__p price">22€</p>
+            </a>
+            <!-- dessert 3 -->
+            <a href="#desserts" class="dessert__btn btn--rnd">
+              <h3 class="desserts__h3 name-eat">Mousse au chocolat</h3>
+              <p class="desserts__p ingredient">
+                Au piment d'Espelette et à la truffe noire
+              </p>
+              <p class="desserts__p price">23€</p>
+            </a>
+          </div>
+        </section>
+        <a
+          href="#"
+          class="btn-purple btn-purple--commander animation__btn-purple"
+          >Commander</a
+        >
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <img
+        alt="logo-ohmyfood-blanc"
+        class="footer__img"
+        src="/images/logo/ohmyfood-blanc.svg"
+      />
+
+      <div class="footer-content">
+        <ul class="footer-content__list">
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <i class="fa-solid fa-utensils footer-content__i"></i>
+              <p class="footer-content__p footer-content__p--pi">
+                Proposer un restaurant
+              </p>
+            </a>
+          </li>
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <i class="fa-solid fa-handshake-angle footer-content__i"></i>
+              <p class="footer-content__p footer-content__p--pi">
+                Devenir partenaire
+              </p>
+            </a>
+          </li>
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <p class="footer-content__p">Mentions légales</p>
+            </a>
+          </li>
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <p class="footer-content__p">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

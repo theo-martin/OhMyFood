@@ -43,6 +43,7 @@
 }
 // animation loader
 .loader {
+  animation: backgroundloader 4000ms ease-in-out forwards;
   &__letter {
     animation: loader-mobile 1000ms ease forwards;
   }
