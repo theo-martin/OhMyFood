@@ -33,8 +33,8 @@ a {
   z-index: 2;
   opacity: 0;
 }
-.heart__full:active {
-  animation: full-heart 550ms forwards;
+.heart__full:hover {
+  animation: full-heart 300ms forwards;
 }
 
 @keyframes full-heart {
@@ -93,6 +93,22 @@ a {
   }
   100% {
     transform: rotate(360deg) scale(2);
+  }
+}
+.menu__btn:hover .menu__background-check {
+  display: flex;
+  animation: check 300ms ease-in-out forwards;
+}
+.menu__btn:hover .menu__price {
+  animation: check 300ms ease-in-out forwards;
+}
+
+@keyframes check {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
 .btn-purple {
@@ -624,39 +640,142 @@ a {
   border-radius: 40px 40px 0 0;
   padding: 0 13px;
 }
-.la-palette-du-gout .title {
+@media (min-width: 768px) {
+  .la-palette-du-gout {
+    margin: -58px 80px 0 80px;
+    padding: 0px 4%;
+  }
+}
+@media (min-width: 1024px) {
+  .la-palette-du-gout {
+    margin: -58px 192px 0 192px;
+    padding: 0px 11%;
+  }
+}
+
+.title {
   display: flex;
   flex-direction: row;
   margin: 31px 17px 0 4px;
 }
-.la-palette-du-gout .title__h1 {
+.title__h1 {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
 }
-.la-palette-du-gout .title__heart {
+.title__heart {
   position: absolute;
   right: 63px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 @media (max-width: 374px) {
-  .la-palette-du-gout .title__h1 {
+  .title__h1 {
     font-size: 26px;
   }
-  .la-palette-du-gout .title__heart {
+  .title__heart {
     right: 43px;
     margin-top: 7px;
   }
 }
-.la-palette-du-gout .entrees__block-btn {
+@media (min-width: 768px) {
+  .title {
+    justify-content: center;
+    gap: 24px;
+  }
+  .title__heart {
+    position: unset;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.menu__h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.menu__h2--green {
+  padding-bottom: 4px;
+  border-bottom: solid 3px #99e2d0;
+}
+.menu__block-btn {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.la-palette-du-gout .entrees__btn {
-  background-color: white;
+.menu__btn {
+  overflow: hidden;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  border-radius: 15.043px;
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+}
+.menu__food-and-ingredient {
+  padding: 15px 0 15px 15px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__name-food {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+}
+.menu__ingredient {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15.043px;
+}
+.menu__price {
+  padding: 15px 15px 15px 0;
+  display: flex;
+  transform-origin: right;
+  align-items: end;
+  transform: translateX(100%);
+}
+.menu__price-and-check {
+  display: flex;
+}
+.menu__background-check {
+  transform: translateX(100%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15.043px 15.043px 0;
+  width: 59px;
+  background-color: #99e2d0;
+}
+.menu__check {
+  color: white;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 40px 0;
+}
+.commander .btn-purple--commander {
+  width: 186px;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  .commander {
+    margin: 0 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .commander {
+    margin: 0 192px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
