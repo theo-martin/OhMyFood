@@ -20,8 +20,8 @@
     position: absolute;
     z-index: 2;
     opacity: 0;
-    &:active {
-      animation: full-heart 550ms forwards;
+    &:hover {
+      animation: full-heart 300ms forwards;
       // opacity: 1;
     }
   }
@@ -43,6 +43,7 @@
 }
 // animation loader
 .loader {
+  animation: backgroundloader 4000ms ease-in-out forwards;
   &__letter {
     animation: loader-mobile 1000ms ease forwards;
   }
@@ -81,5 +82,25 @@
   }
   100% {
     transform: rotate(360deg) scale(2);
+  }
+}
+
+// animation menu
+
+.menu__btn:hover {
+  .menu__background-check {
+    display: flex;
+    animation: check 300ms ease-in-out forwards;
+  }
+  .menu__price {
+    animation: check 300ms ease-in-out forwards;
+  }
+}
+@keyframes check {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }

@@ -33,8 +33,8 @@ a {
   z-index: 2;
   opacity: 0;
 }
-.heart__full:active {
-  animation: full-heart 550ms forwards;
+.heart__full:hover {
+  animation: full-heart 300ms forwards;
 }
 
 @keyframes full-heart {
@@ -51,6 +51,9 @@ a {
   100% {
     opacity: 1;
   }
+}
+.loader {
+  animation: backgroundloader 4000ms ease-in-out forwards;
 }
 .loader__letter {
   animation: loader-mobile 1000ms ease forwards;
@@ -92,6 +95,22 @@ a {
     transform: rotate(360deg) scale(2);
   }
 }
+.menu__btn:hover .menu__background-check {
+  display: flex;
+  animation: check 300ms ease-in-out forwards;
+}
+.menu__btn:hover .menu__price {
+  animation: check 300ms ease-in-out forwards;
+}
+
+@keyframes check {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .btn-purple {
   color: white;
   display: flex;
@@ -108,14 +127,9 @@ a {
 }
 
 .heart {
-  display: flex;
   z-index: 2;
-  margin-top: 25px;
   border: unset;
-  position: absolute;
   font-size: 24px;
-  align-items: flex-start;
-  right: 70px;
 }
 .heart__full::before {
   background: linear-gradient(0deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -124,21 +138,13 @@ a {
 }
 @media (min-width: 768px) {
   .heart {
-    top: 20px;
     width: unset;
     height: 0;
-    position: relative;
-    padding-left: 42vw;
-    right: 120px;
-    justify-items: center;
-    align-items: flex-start;
-    margin-top: unset;
   }
 }
 @media (min-width: 1024px) {
   .heart {
     height: 0;
-    right: 180px;
   }
 }
 
@@ -155,10 +161,13 @@ a {
   width: 197px;
   height: 36px;
 }
+.header__link-goback {
+  position: absolute;
+  left: 10%;
+}
 .header__goback {
   color: black;
-  width: 30px;
-  height: 30px;
+  font-size: 25px;
 }
 @media (min-width: 768px) {
   .header {
@@ -186,6 +195,7 @@ a {
 @media (min-width: 768px) {
   .header--shadow {
     position: unset;
+    box-shadow: unset;
   }
 }
 
@@ -271,7 +281,6 @@ a {
   gap: 5px;
   padding-left: 30px;
   background-color: white;
-  animation: backgroundloader 4000ms ease-in-out forwards;
 }
 .loader__letter {
   display: flex;
@@ -444,15 +453,7 @@ a {
   }
   .fonctionnement__num {
     left: unset;
-  }
-  .fonctionnement__num--1 {
-    left: 4.5vw;
-  }
-  .fonctionnement__num--2 {
-    left: 35vw;
-  }
-  .fonctionnement__num--3 {
-    left: 65vw;
+    margin-right: 27.5%;
   }
 }
 @media (min-width: 1024px) {
@@ -475,15 +476,6 @@ a {
   }
   .fonctionnement__num {
     margin-left: -13px;
-  }
-  .fonctionnement__num--1 {
-    left: unset;
-  }
-  .fonctionnement__num--2 {
-    left: unset;
-  }
-  .fonctionnement__num--3 {
-    left: unset;
   }
 }
 
@@ -544,6 +536,29 @@ a {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
+.card__heart {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  right: 70px;
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  .card__heart {
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: unset;
+    padding-left: 42vw;
+    right: 120px;
+    position: relative;
+    top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .card__heart {
+    right: 180px;
+  }
+}
 .card__new {
   z-index: 3;
   display: flex;
@@ -564,7 +579,7 @@ a {
     width: 45%;
   }
   .card__new--1 {
-    left: 33vw;
+    right: 54%;
   }
   .card__new--2 {
     right: 70px;
@@ -575,7 +590,7 @@ a {
 }
 @media (min-width: 1024px) {
   .card__new--1 {
-    left: 35vw;
+    right: 54%;
   }
   .card__new--2 {
     right: 190px;
@@ -606,6 +621,161 @@ a {
 }
 .card-content__p {
   font-size: 17px;
+}
+
+.banner__img {
+  z-index: -1;
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 275px;
+}
+
+.la-palette-du-gout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: -58px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  padding: 0 13px;
+}
+@media (min-width: 768px) {
+  .la-palette-du-gout {
+    margin: -58px 80px 0 80px;
+    padding: 0px 4%;
+  }
+}
+@media (min-width: 1024px) {
+  .la-palette-du-gout {
+    margin: -58px 192px 0 192px;
+    padding: 0px 11%;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin: 31px 17px 0 4px;
+}
+.title__h1 {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
+.title__heart {
+  position: absolute;
+  right: 63px;
+  margin-top: 9px;
+}
+@media (max-width: 374px) {
+  .title__h1 {
+    font-size: 26px;
+  }
+  .title__heart {
+    right: 43px;
+    margin-top: 7px;
+  }
+}
+@media (min-width: 768px) {
+  .title {
+    justify-content: center;
+    gap: 24px;
+  }
+  .title__heart {
+    position: unset;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.menu__h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.menu__h2--green {
+  padding-bottom: 4px;
+  border-bottom: solid 3px #99e2d0;
+}
+.menu__block-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu__btn {
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  border-radius: 15.043px;
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+}
+.menu__food-and-ingredient {
+  padding: 15px 0 15px 15px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__name-food {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+}
+.menu__ingredient {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15.043px;
+}
+.menu__price {
+  padding: 15px 15px 15px 0;
+  display: flex;
+  transform-origin: right;
+  align-items: end;
+  transform: translateX(100%);
+}
+.menu__price-and-check {
+  display: flex;
+}
+.menu__background-check {
+  transform: translateX(100%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15.043px 15.043px 0;
+  width: 59px;
+  background-color: #99e2d0;
+}
+.menu__check {
+  color: white;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 40px 0;
+}
+.commander .btn-purple--commander {
+  width: 186px;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  .commander {
+    margin: 0 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .commander {
+    margin: 0 192px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

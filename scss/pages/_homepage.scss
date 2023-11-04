@@ -128,15 +128,7 @@
     }
     &__num {
       left: unset;
-    }
-    &__num--1 {
-      left: 4.5vw;
-    }
-    &__num--2 {
-      left: 35vw;
-    }
-    &__num--3 {
-      left: 65vw;
+      margin-right: 27.5%;
     }
   }
   @media (min-width: 1024px) {
@@ -157,16 +149,6 @@
     }
     &__num {
       margin-left: -13px;
-    }
-    // NUM A VERRIFIER (position absolute ou margin negatif)
-    &__num--1 {
-      left: unset;
-    }
-    &__num--2 {
-      left: unset;
-    }
-    &__num--3 {
-      left: unset;
     }
   }
 }
@@ -223,6 +205,25 @@
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
+  &__heart {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    right: 70px;
+    margin-top: 25px;
+    @media (min-width: 768px) {
+      justify-items: center;
+      align-items: flex-start;
+      margin-top: unset;
+      padding-left: 42vw;
+      right: 120px;
+      position: relative;
+      top: 20px;
+    }
+    @media (min-width: 1024px) {
+      right: 180px;
+    }
+  }
   &__new {
     z-index: 3;
     display: flex;
@@ -242,7 +243,7 @@
   @media (min-width: 768px) {
     width: 45%;
     &__new--1 {
-      left: 33vw;
+      right: 54%;
     }
     &__new--2 {
       right: 70px;
@@ -254,7 +255,7 @@
 
   @media (min-width: 1024px) {
     &__new--1 {
-      left: 35vw;
+      right: 54%;
     }
     &__new--2 {
       right: 190px;
