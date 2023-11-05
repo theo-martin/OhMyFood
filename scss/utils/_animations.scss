@@ -22,7 +22,6 @@
     opacity: 0;
     &:hover {
       animation: full-heart 300ms forwards;
-      // opacity: 1;
     }
   }
 }
@@ -84,23 +83,59 @@
     transform: rotate(360deg) scale(2);
   }
 }
-
-// animation menu
-
+// animation validation menu
 .menu__btn:hover {
+  .menu__price-and-check {
+    animation: check 250ms ease-in-out forwards;
+  }
   .menu__background-check {
-    display: flex;
-    animation: check 300ms ease-in-out forwards;
+    animation: background-check 200ms ease-in-out forwards;
   }
   .menu__price {
-    animation: check 300ms ease-in-out forwards;
+    transform: translateX(0%);
+  }
+}
+.menu__btn {
+  .menu__background-check {
+    animation: background-check-reverse 200ms ease-in-out forwards;
+  }
+  .menu__price-and-check {
+    animation: check-reverse 250ms ease-in-out forwards;
+  }
+  .menu__price {
+    transform: translateX(-65%);
+  }
+}
+@keyframes check-reverse {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(60%);
   }
 }
 @keyframes check {
   from {
-    transform: translateX(100%);
+    transform: translateX(60%);
   }
   to {
     transform: translateX(0%);
+  }
+}
+
+@keyframes background-check {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@keyframes background-check-reverse {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
   }
 }

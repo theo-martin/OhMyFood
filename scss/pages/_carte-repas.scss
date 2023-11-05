@@ -86,7 +86,6 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
-    // padding: 15px;
     border-radius: 15.043px;
     background-color: white;
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
@@ -113,16 +112,13 @@
   &__price {
     padding: 15px 15px 15px 0;
     display: flex;
-    transform-origin: right;
     align-items: end;
-    transform: translateX(100%);
   }
   &__price-and-check {
     display: flex;
+    position: relative;
   }
-  // display none pour la version non cliquer a voir apres
   &__background-check {
-    transform: translateX(100%);
     justify-content: center;
     align-items: center;
     border-radius: 0 15.043px 15.043px 0;
