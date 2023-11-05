@@ -95,20 +95,56 @@ a {
     transform: rotate(360deg) scale(2);
   }
 }
+.menu__btn:hover .menu__price-and-check {
+  animation: check 250ms ease-in-out forwards;
+}
 .menu__btn:hover .menu__background-check {
-  display: flex;
-  animation: check 300ms ease-in-out forwards;
+  animation: background-check 200ms ease-in-out forwards;
 }
 .menu__btn:hover .menu__price {
-  animation: check 300ms ease-in-out forwards;
+  transform: translateX(0%);
 }
 
+.menu__btn .menu__background-check {
+  animation: background-check-reverse 200ms ease-in-out forwards;
+}
+.menu__btn .menu__price-and-check {
+  animation: check-reverse 250ms ease-in-out forwards;
+}
+.menu__btn .menu__price {
+  transform: translateX(-65%);
+}
+
+@keyframes check-reverse {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(60%);
+  }
+}
 @keyframes check {
   from {
-    transform: translateX(100%);
+    transform: translateX(60%);
   }
   to {
     transform: translateX(0%);
+  }
+}
+@keyframes background-check {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@keyframes background-check-reverse {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
   }
 }
 .btn-purple {
@@ -297,8 +333,14 @@ a {
 .loader__letter--m {
   margin: 0 0px 0 -10px;
 }
-.loader__letter--o {
-  margin: 0 0px 0 -10px;
+.loader__letter--o1 {
+  margin: 0 -15px 0 0px;
+}
+.loader__letter--o2 {
+  margin: 0 -5px 0 0px;
+}
+.loader__letter--o3 {
+  margin: 0 -15px 0 -10px;
 }
 @media (min-width: 768px) {
   .loader {
@@ -309,10 +351,10 @@ a {
     width: 55px;
   }
   .loader__letter--f {
-    margin: 0 -20px 0 0px;
+    margin: 0 -20px 0 -10px;
   }
   .loader__letter--m {
-    margin: 0 15px 0 5px;
+    margin: 0 15px 0 -10px;
   }
   .loader__letter--o {
     margin: unset;
@@ -738,15 +780,13 @@ a {
 .menu__price {
   padding: 15px 15px 15px 0;
   display: flex;
-  transform-origin: right;
   align-items: end;
-  transform: translateX(100%);
 }
 .menu__price-and-check {
   display: flex;
+  position: relative;
 }
 .menu__background-check {
-  transform: translateX(100%);
   justify-content: center;
   align-items: center;
   border-radius: 0 15.043px 15.043px 0;

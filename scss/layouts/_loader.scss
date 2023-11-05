@@ -10,7 +10,7 @@
   gap: 5px;
   padding-left: 30px;
   background-color: white;
-  
+
   &__letter {
     display: flex;
     font-family: Shrikhand;
@@ -29,8 +29,14 @@
     &--m {
       margin: 0 0px 0 -10px;
     }
-    &--o {
-      margin: 0 0px 0 -10px;
+    &--o1 {
+      margin: 0 -15px 0 0px;
+    }
+    &--o2 {
+      margin: 0 -5px 0 0px;
+    }
+    &--o3 {
+      margin: 0 -15px 0 -10px;
     }
   }
   @media (min-width: 768px) {
@@ -39,10 +45,10 @@
       height: 30px;
       width: 55px;
       &--f {
-        margin: 0 -20px 0 0px;
+        margin: 0 -20px 0 -10px;
       }
       &--m {
-        margin: 0 15px 0 5px;
+        margin: 0 15px 0 -10px;
       }
       &--o {
         margin: unset;
