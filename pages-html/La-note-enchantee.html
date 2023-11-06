@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohMyFood</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="png" href="/images/logo/cooking.256x256.png" />
+    <script
+      src="https://kit.fontawesome.com/1c9456a698.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <span class="loader__letter loader__letter--o1">o</span>
+      <span class="loader__letter">h</span>
+      <span class="loader__letter loader__letter--m">m</span>
+      <span class="loader__letter">y</span>
+      <span class="loader__letter loader__letter--f">f</span>
+      <span class="loader__letter loader__letter--o2">o</span>
+      <span class="loader__letter loader__letter--o3">o</span>
+      <span class="loader__letter loader__letter--d">d</span>
+    </div>
+    <header class="header header--shadow">
+      <a href="/index.html" class="header__link-goback">
+        <i class="fa-solid fa-arrow-left header__goback"></i>
+      </a>
+      <img class="header__logo" src="/images/logo/ohmyfood.png" alt="logo" />
+    </header>
+    <main>
+      <section class="banner">
+        <img
+          class="banner__img"
+          src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+          alt="image-banniere"
+        />
+      </section>
+      <section class="la-palette-du-gout">
+        <section class="title">
+          <h1 class="title__h1">La note enchantée</h1>
+          <button class="heart title__heart">
+            <i class="fa-regular fa-heart heart__empty"> </i>
+            <i class="fa-solid fa-heart heart__full"></i>
+          </button>
+        </section>
+        <!-- partie entrées -->
+        <section id="entrees" class="menu">
+          <h2 class="menu__h2"><span class="menu__h2--green">ENTRÉ</span>ES</h2>
+          <div class="menu__block-btn">
+            <!-- entrée 1 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Ravioles de foie gras</h3>
+                <p class="menu__ingredient">
+                  Accompagnées de leur crème à la truffe
+                </p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">25€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+            <!--entrée 2  -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Caviar osciètre</h3>
+                <p class="menu__ingredient">
+                  Sur blini à la farine de blé noir
+                </p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">35€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+            <!-- entrée 3 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Homard et espuma de potiron</h3>
+                <p class="menu__ingredient">Marinés aux zestes d'orange</p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">20€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+            <!-- entrée 4 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Foie gras de canard cuit entier</h3>
+                <p class="menu__ingredient">
+                  Confiture de figue et pain toasté
+                </p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">35€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- partie plats -->
+        <section id="plats" class="menu">
+          <h2 class="menu__h2"><span class="menu__h2--green">PLAT</span>S</h2>
+          <div class="menu__block-btn">
+            <!-- plat 1 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Noix de coquilles Saint-Jacques</h3>
+                <p class="menu__ingredient">Sur lit de purée de céleri-rave</p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">40€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+            <!-- plat 2 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Langoustine poêlée</h3>
+                <p class="menu__ingredient">Purée de patate douce</p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">35€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+            <!-- plat 3 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Mijoté de queue de bœuf</h3>
+                <p class="menu__ingredient">
+                  Et riz sauvage aux zestes de citron
+                </p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">45€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- partie desserts -->
+        <section id="desserts" class="menu">
+          <h2 class="menu__h2">
+            <span class="menu__h2--green">DESS</span>ERTS
+          </h2>
+          <div class="menu__block-btn">
+            <!-- dessert 1 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Macaron noisette et chocolat</h3>
+                <p class="menu__ingredient">
+                  Glace au caramel brun et sel de Guérande
+                </p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">18€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+            <!-- dessert 2 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Baba au rhum revisité</h3>
+                <p class="menu__ingredient">Avec son coulis de citron</p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">22€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+            <!-- dessert 3 -->
+            <section class="menu__btn btn--rnd">
+              <div class="menu__food-and-ingredient">
+                <h3 class="menu__name-food">Tarte au citron meringuée</h3>
+                <p class="menu__ingredient">Déstructurée</p>
+              </div>
+              <div class="menu__price-and-check">
+                <p class="menu__price">23€</p>
+                <div class="menu__background-check">
+                  <i class="fa-solid fa-circle-check menu__check"></i>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+      <section class="commander">
+        <a
+          href="#"
+          class="btn-purple btn-purple--commander animation__btn-purple"
+          >Commander</a
+        >
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <img
+        alt="logo-ohmyfood-blanc"
+        class="footer__img"
+        src="/images/logo/ohmyfood-blanc.svg"
+      />
+
+      <div class="footer-content">
+        <ul class="footer-content__list">
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <i class="fa-solid fa-utensils footer-content__i"></i>
+              <p class="footer-content__p footer-content__p--pi">
+                Proposer un restaurant
+              </p>
+            </a>
+          </li>
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <i class="fa-solid fa-handshake-angle footer-content__i"></i>
+              <p class="footer-content__p footer-content__p--pi">
+                Devenir partenaire
+              </p>
+            </a>
+          </li>
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <p class="footer-content__p">Mentions légales</p>
+            </a>
+          </li>
+          <li class="footer-content__element">
+            <a class="footer-content__link" href="#footer">
+              <p class="footer-content__p">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
