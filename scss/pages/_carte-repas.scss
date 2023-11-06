@@ -119,6 +119,7 @@
     position: relative;
   }
   &__background-check {
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 15.043px 15.043px 0;
