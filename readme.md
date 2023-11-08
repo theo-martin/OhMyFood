@@ -1,4 +1,4 @@
-**_Projet n°4 de la formation integrateur web de open classerooms._**
+**_Projet n°4 de la formation integrateur web de openclassrooms._**
 
 **_le projet OhMyFood suis les indication demandé :_**
 
