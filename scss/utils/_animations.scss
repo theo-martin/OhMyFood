@@ -140,3 +140,27 @@
     display: none;
   }
 }
+
+// animation delai menu
+#entrees {
+  animation: delai-menu 650ms ease-in-out forwards;
+  opacity: 0;
+}
+#plats {
+  animation: delai-menu 650ms 400ms ease-in-out forwards;
+  opacity: 0;
+}
+#desserts {
+  animation: delai-menu 650ms 800ms ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes delai-menu {
+  from {
+    transform: translateX(60%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
